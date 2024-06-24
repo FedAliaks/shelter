@@ -1,0 +1,13 @@
+.navigation {
+  max-width: 443px;
+  width: 100%;
+
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+}

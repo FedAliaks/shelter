@@ -1,0 +1,34 @@
+//normalize
+@import "../node_modules/normalize.css/normalize.css";
+
+//Abstract
+@import "./styles/abstract/constants";
+@import "./styles/abstract/fonts";
+@import "./styles/abstract/mixins";
+@import "./styles/abstract/placeholders";
+
+//Base
+@import "./styles/base/base";
+@import "./styles/base/buttons";
+@import "./styles/base/icons";
+@import "./styles/base/mobile-menu";
+
+//layouts
+@import "./styles/layouts/wrapper";
+@import "./styles/layouts/header";
+@import "./styles/layouts/navigation";
+@import "./styles/layouts/columns";
+@import "./styles/layouts/carousel";
+@import "./styles/layouts/footer";
+@import "./styles/layouts/hamburger";
+@import "./styles/layouts/overlay";
+
+//components
+@import "./styles/components/not-only";
+@import "./styles/components/about";
+@import "./styles/components/our-pets";
+@import "./styles/components/how-you-can";
+@import "./styles/components/donation";
+
+//pages
+@import "./styles/pages/pets";

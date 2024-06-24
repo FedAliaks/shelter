@@ -1,0 +1,180 @@
+%our-pets-icon-size {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+
+  @include media-mobile {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.arrow-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border: 2px solid $color-primary;
+  border-radius: 100px;
+  @extend %transition;
+
+  &:hover {
+    background: $color-primary;
+    cursor: pointer;
+  }
+}
+
+.ico-arrow-left {
+  display: block;
+  background-image: url("./../public/svg/our-pets/arrow-left.svg");
+  width: 14px;
+  height: 6px;
+}
+
+.ico-arrow-right {
+  display: block;
+  background-image: url("./../public/svg/our-pets/arrow-right.svg");
+  width: 14px;
+  height: 6px;
+}
+
+//how-you-can
+
+.svg-size {
+  width: 60px;
+  height: 60px;
+
+  @include media-mobile {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.ico-pet-food {
+  background-image: url("./../public/svg/you-can/icon-pet-food.svg");
+  @extend %our-pets-icon-size;
+}
+
+.ico-pet-transportation {
+  background-image: url("./../public/svg/you-can/icon-transportation.svg");
+  @extend %our-pets-icon-size;
+}
+
+.ico-pet-toys {
+  background-image: url("./../public/svg/you-can/icon-toys.svg");
+  @extend %our-pets-icon-size;
+}
+
+.ico-pet-bowl {
+  background-image: url("./../public/svg/you-can/icon-bowls-and-cups.svg");
+  @extend %our-pets-icon-size;
+}
+
+.ico-pet-shampoos {
+  background-image: url("./../public/svg/you-can/icon-shampoos.svg");
+  @extend %our-pets-icon-size;
+}
+
+.ico-pet-vitamins {
+  background-image: url("./../public/svg/you-can/icon-vitamins.svg");
+  @extend %our-pets-icon-size;
+}
+
+.ico-pet-medicines {
+  background-image: url("./../public/svg/you-can/icon-medicines.svg");
+  @extend %our-pets-icon-size;
+}
+
+.ico-pet-collars {
+  background-image: url("./../public/svg/you-can/icon-collars-leashes.svg");
+  @extend %our-pets-icon-size;
+}
+
+.ico-pet-sleep {
+  background-image: url("./../public/svg/you-can/icon-sleeping-area.svg");
+  @extend %our-pets-icon-size;
+}
+
+.how-you-can__icon-title {
+  padding-top: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+
+  @include media-mobile {
+    padding-top: 22px;
+  }
+}
+
+.icon-credit-card {
+  display: inline-block;
+  background-image: url("./../public/svg/how-you-can/credit-card.svg");
+  width: 30px;
+  height: 23px;
+}
+
+//footer
+.icon-email {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("./../public/svg/footer/icon-email.svg");
+  width: 40px;
+  height: 32px;
+}
+
+.icon-phone {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("./../public/svg/footer/icon-phone.svg");
+  width: 40px;
+  height: 32px;
+}
+
+.icon-pin {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("./../public/svg/footer/pin.svg");
+  width: 22px;
+  height: 32px;
+}
+
+//pets page
+.icon-2-arrow-left {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("./../public/svg/pets-page/2-arrow-left-inactive.svg");
+  width: 25px;
+  height: 11px;
+}
+
+.icon-arrow-left {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("./../public/svg/pets-page/arrow-left-inactive.svg");
+  width: 10px;
+  height: 11px;
+}
+
+.icon-arrow-right {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("./../public/svg/pets-page/arrow-right-active.svg");
+  width: 10px;
+  height: 11px;
+}
+
+.icon-2-arrow-right {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("./../public/svg/pets-page/2-arrow-right-active.svg");
+  width: 25px;
+  height: 11px;
+}
+
+.arrow-icon--container {
+  @include media-mobile {
+    order: 1;
+  }
+}

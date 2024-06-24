@@ -1,0 +1,15 @@
+.layout-2-column {
+  display: flex;
+  justify-content: space-between;
+
+  @include media-laptop {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.layout-3-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

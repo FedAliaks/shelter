@@ -1,0 +1,48 @@
+.how-you-can {
+}
+
+.how-you-can__icons-section {
+  padding: 60px 64px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 11%;
+  row-gap: 52px;
+
+  @include media-laptop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10%;
+    padding: 58px 41px 0px;
+    justify-items: center;
+  }
+
+  @include media-mobile {
+    display: grid;
+    grid-template-columns: repeat((2, 1fr));
+    padding: 40px 5px 0px;
+    row-gap: 28px;
+    justify-items: center;
+  }
+}
+
+.how-you-can_icon {
+  @include media-laptop {
+    width: 170px;
+  }
+
+  @include media-mobile {
+    width: 130px;
+  }
+}
+
+.how-you-cat__title {
+  width: 310px;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  @include media-mobile {
+    width: 223px;
+  }
+}

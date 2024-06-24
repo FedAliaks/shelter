@@ -1,0 +1,83 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  @extend %font-add;
+  @include font($size: 3.2rem, $height: 110%);
+  letter-spacing: 0.06em;
+}
+
+h2 {
+  @extend %font-add;
+  @include font($size: 4.4rem, $height: 130%);
+
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 130%);
+    letter-spacing: 0.06em;
+  }
+}
+
+h3 {
+  @extend %font-add;
+  @include font($size: 3.5rem, $height: 130%);
+  letter-spacing: 0.06em;
+
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 130%);
+  }
+}
+
+h4 {
+  @extend %font-add;
+  @include font($size: 2rem, $height: 2.3rem);
+  letter-spacing: 0.06em;
+
+  @include media-mobile {
+    @include font($size: 1.5rem, $height: 1.65rem);
+  }
+}
+
+.section-container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  @include media-laptop {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  @include media-mobile {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+}
+
+.title-section {
+  color: $color-dark-l;
+}

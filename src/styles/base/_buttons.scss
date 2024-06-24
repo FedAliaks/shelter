@@ -1,0 +1,30 @@
+.button {
+  @extend %font-add;
+  @include font($size: 1.7rem, $height: 130%);
+  letter-spacing: 0.06em;
+  color: $color-dark-3xl;
+  background: transparent;
+  border-radius: 100px;
+  border: none;
+  @extend %transition;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: $color-primary;
+  }
+}
+
+.card__button {
+  @extend %font-add;
+  width: 187px;
+  height: 52px;
+  border: 2px solid $color-primary;
+}
+
+.our-pets__button {
+  @extend %font-add;
+  width: 261px;
+  height: 52px;
+  background: $color-primary;
+}

@@ -1,0 +1,75 @@
+.header {
+  padding: 28px 0 92px 0;
+  background: url("./../public/images/not-only/noise_transparent.png"),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+
+  @include media-laptop {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @include media-mobile {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title-block {
+  @extend %transition;
+
+  &:hover {
+    .header__title-content {
+      color: $color-primary;
+    }
+  }
+}
+
+.title-page {
+  padding-bottom: 10px;
+
+  color: $color-primary;
+}
+
+.header__title-content {
+  @extend %font-primary;
+  @include font($size: 1.3rem, $height: 1.5rem);
+  letter-spacing: 0.1em;
+  color: $color-light-xl;
+}
+
+.header-link {
+  position: relative;
+  @include font($size: 1.5rem, $height: 160%);
+  @extend %font-primary;
+  color: $color-dark-s;
+
+  &:hover {
+    cursor: pointer;
+    color: $color-primary;
+  }
+}
+
+.item-active {
+  color: $color-light-s;
+
+  &:hover {
+    cursor: default;
+    color: $color-light-s;
+  }
+}
+
+.item-active:after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: $color-primary;
+}
